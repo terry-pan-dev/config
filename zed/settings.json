@@ -7,6 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "scrollbar": {
+    "show": "never"
+  },
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true
+  },
+  "relative_line_numbers": true,
+  "vertical_scroll_margin": 0,
   "format_on_save": "on",
   "languages": {
     "TypeScript": {

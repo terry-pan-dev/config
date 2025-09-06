@@ -24,6 +24,12 @@
     }
   },
   {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "l": ["project_panel::Open", "editor::ToggleFocus"]
+    }
+  },
+  {
     "context": "Terminal",
     "bindings": {
       "ctrl-w h": "workspace::ActivatePaneLeft",
