@@ -7,6 +7,21 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "default_minimum_tokens": "10000"
+      }
+    },
+    "playwright": {
+      "source": "custom",
+      "enabled": true,
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  },
   "tab_bar": {
     "show": false
   },
@@ -78,5 +93,6 @@
   },
   "vim_mode": true,
   "ui_font_size": 15,
+  "ui_font_family": "Maple Mono NF",
   "buffer_font_size": 15
 }

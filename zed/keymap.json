@@ -4,7 +4,7 @@
     "bindings": {
       "cmd-p": [
         "task::Spawn",
-        {"task_name": "File Finder", "reveal_target": "center"}
+        { "task_name": "File Finder", "reveal_target": "center" }
       ]
     }
   },
@@ -13,7 +13,7 @@
     "bindings": {
       "cmd-s": [
         "task::Spawn",
-        {"task_name": "Find in Files", "reveal_target": "center"}
+        { "task_name": "Find in Files", "reveal_target": "center" }
       ]
     }
   },
@@ -26,7 +26,7 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "l": ["project_panel::Open", "editor::ToggleFocus"]
+      "l": "project_panel::Open"
     }
   },
   {
@@ -39,6 +39,24 @@
     "context": "VimControl && !menu",
     "bindings": {
       "g p": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-1": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-2": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-3": "terminal_panel::ToggleFocus"
     }
   },
   {
