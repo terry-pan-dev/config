@@ -1,0 +1,35 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-p": [
+        "task::Spawn",
+        {"task_name": "File Finder", "reveal_target": "center"}
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-s": [
+        "task::Spawn",
+        {"task_name": "Find in Files", "reveal_target": "center"}
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-s": "workspace::Save"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w l": "workspace::ActivatePaneRight"
+    }
+  }
+]

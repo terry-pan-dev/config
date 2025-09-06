@@ -1,0 +1,47 @@
+# Basic Television configuration v0.13.3
+
+frame_rate = 60
+tick_rate = 50
+
+[ui]
+use_nerd_font_icons = false
+ui_scale = 100
+show_help_bar = false
+show_preview_panel = true
+input_bar_position = "top"
+theme = "default"
+
+[previewers.file]
+theme = "TwoDark"
+
+# Shell integration
+[shell_integration.commands]
+# environment variables
+"export" = "env"
+"unset" = "env"
+
+# dirs channel
+"cd" = "dirs"
+"ls" = "dirs"
+"rmdir" = "dirs"
+
+# files channel
+"cat" = "files"
+"less" = "files"
+"head" = "files"
+"tail" = "files"
+"vim" = "files"
+"bat" = "files"
+
+# git-diff channel
+"git add" = "git-diff"
+
+# git-branch channel
+"git checkout" = "git-branch"
+"git branch -d" = "git-branch"
+
+# docker-images channel
+"docker run" = "docker-images"
+
+# gitrepos channel
+"nvim" = "git-repos"

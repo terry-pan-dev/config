@@ -1,0 +1,19 @@
+[metadata]
+name = "files"
+description = "A channel to select files and directories"
+requirements = ["fd", "bat"]
+
+[source]
+# https://github.com/sharkdp/fd
+# exclude folder 'fd -t f -E node_modules -E dist'
+command = "fd -H -E .git -t f"
+
+[preview]
+command = "bat -n --color=always '{}'"
+env = { BAT_THEME = "Catppuccin Mocha" }
+
+[ui]
+preview_panel = { "size" = 70, "scrollbar" = true }
+
+[keybindings]
+shortcut = "f1"

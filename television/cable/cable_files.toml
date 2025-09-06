@@ -1,0 +1,14 @@
+[metadata]
+name = "cable_files"
+description = "Fuzzy search files in ~/.config/television/cable with previews"
+requirements = ["fd", "bat"]
+
+[source]
+command = "fd -t f . ~/.config/television/cable"
+
+[preview]
+command = "bat -n --color=always '{}'"
+env = { BAT_THEME = "Catppuccin Mocha" }  # Optional theme for preview
+
+[ui]
+preview_panel = { "size" = 70, "scrollbar" = true }
