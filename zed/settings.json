@@ -56,13 +56,20 @@
   },
   "terminal": {
     "dock": "right",
-    "font_size": 14
+    "font_size": 14,
+    "cursor_shape": "bar"
   },
   "icon_theme": "VSCode Icons (Dark)",
-  "theme": "VSCode Dark Modern",
+  "theme": "One Dark",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "gutter": {
+    "folds": false
+  },
+  "minimap": {
+    "show": "always"
   },
   "vim_mode": true,
   "ui_font_size": 15,
